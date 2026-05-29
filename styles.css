@@ -327,6 +327,37 @@ main {
   text-transform: uppercase;
 }
 
+.soon-badge {
+  display: inline-flex;
+  width: max-content;
+  margin-bottom: 10px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  padding: 3px 8px;
+  background: rgba(255, 254, 250, .74);
+  font-size: .7rem;
+  font-weight: 950;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.summer-card.is-soon {
+  opacity: .82;
+}
+
+.summer-card.is-soon .label,
+.summer-card.is-soon p:not(.label) {
+  color: #5c5852;
+}
+
+.summer-card.is-soon strong {
+  color: var(--ink);
+  background: rgba(255, 254, 250, .7);
+  font-size: .86rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
 .summer-card p:not(.label) {
   margin: 0;
   color: var(--muted);

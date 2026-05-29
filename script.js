@@ -14,7 +14,7 @@ const menus = {
     ["Przelewowa (drip)", "20 zł", "Powtarzalny drip z kawy specialty. Odkryj owoce, kwiaty i wyjątkowy smak."]
   ],
   cold: [
-    ["Aisu Ti", "20 zł", "Nowa zimna herbata: napar herbaciany na lodzie, cytrusy, mięta i delikatny miodowy finisz."],
+    ["Aisu Ti", "20 zł", "Nowa zimna herbata na lodzie.", ["Rabarbar-cytryna", "Malina-mięta", "Cytryna-pomarańcza"]],
     ["Lemoniada", "18 zł", "Domowa lemoniada z naturalnych składników.", ["Rabarbarowa", "Cytryna i pomarańcza", "Malina"]],
     ["Kinga Pienińska lemoniada 250 ml", "12 zł", "Butelkowana lemoniada.", ["Cytryna", "Pomarańcza"]],
     ["Soki wolnowyciskane", "20 zł", "Świeże soki tłoczone metodą slow juicing."],
