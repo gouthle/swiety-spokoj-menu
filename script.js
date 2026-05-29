@@ -14,6 +14,7 @@ const menus = {
     ["Przelewowa (drip)", "20 zł", "Powtarzalny drip z kawy specialty. Odkryj owoce, kwiaty i wyjątkowy smak."]
   ],
   cold: [
+    ["Aisu Ti", "20 zł", "Nowa zimna herbata: napar herbaciany na lodzie, cytrusy, mięta i delikatny miodowy finisz."],
     ["Lemoniada", "18 zł", "Domowa lemoniada z naturalnych składników.", ["Rabarbarowa", "Cytryna i pomarańcza", "Malina"]],
     ["Kinga Pienińska lemoniada 250 ml", "12 zł", "Butelkowana lemoniada.", ["Cytryna", "Pomarańcza"]],
     ["Soki wolnowyciskane", "20 zł", "Świeże soki tłoczone metodą slow juicing."],
@@ -108,11 +109,19 @@ document.querySelectorAll("[data-menu]").forEach((container) => {
   menus[container.dataset.menu].forEach((entry) => container.append(makeItem(entry)));
 });
 
+const activatePanel = (target) => {
+  document.querySelectorAll(".tab").forEach((button) => button.classList.toggle("is-active", button.dataset.target === target));
+  document.querySelectorAll(".panel").forEach((panel) => panel.classList.toggle("is-active", panel.id === target));
+  window.scrollTo({ top: document.querySelector(".tabs").offsetTop, behavior: "smooth" });
+};
+
 document.querySelectorAll(".tab").forEach((tab) => {
-  tab.addEventListener("click", () => {
-    const target = tab.dataset.target;
-    document.querySelectorAll(".tab").forEach((button) => button.classList.toggle("is-active", button === tab));
-    document.querySelectorAll(".panel").forEach((panel) => panel.classList.toggle("is-active", panel.id === target));
-    window.scrollTo({ top: document.querySelector(".tabs").offsetTop, behavior: "smooth" });
+  tab.addEventListener("click", () => activatePanel(tab.dataset.target));
+});
+
+document.querySelectorAll("[data-jump]").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    activatePanel(link.dataset.jump);
   });
 });
