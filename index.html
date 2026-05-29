@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8f5ed">
+    <title>Święty Spokój Kawiarnia | Menu</title>
+    <meta
+      name="description"
+      content="Menu kawiarni Święty Spokój w Krakowie: kawa, lemoniady, herbaty, lody rzemieślnicze i menu letnie."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <div class="hero__inner">
+        <p class="kicker">Kawiarnia w Krakowie</p>
+        <h1>Święty Spokój</h1>
+        <p class="hero__copy">Kawa specialty, letnie napoje, herbaty i coś słodkiego do spokojnej chwili przy Ludowej 6.</p>
+        <div class="hero__meta" aria-label="Kontakt">
+          <a href="https://maps.google.com/?q=Ludowa%206%2C%20Krak%C3%B3w" target="_blank" rel="noreferrer">Ludowa 6</a>
+          <a href="https://www.instagram.com/kawiarniaswietyspokoj/" target="_blank" rel="noreferrer">@KawiarniaSwietySpokoj</a>
+        </div>
+      </div>
+    </header>
+
+    <nav class="tabs" aria-label="Kategorie menu">
+      <button class="tab is-active" type="button" data-target="summer">Letnie</button>
+      <button class="tab" type="button" data-target="coffee">Kawa</button>
+      <button class="tab" type="button" data-target="cold">Napoje</button>
+      <button class="tab" type="button" data-target="tea">Herbaty</button>
+      <button class="tab" type="button" data-target="sweets">Słodkie</button>
+      <button class="tab" type="button" data-target="bar">Bar</button>
+      <button class="tab" type="button" data-target="original">Oryginał</button>
+    </nav>
+
+    <main>
+      <section class="panel is-active" id="summer" aria-labelledby="summer-title">
+        <div class="section-head">
+          <p class="kicker">Sezonowo</p>
+          <h2 id="summer-title">Menu letnie</h2>
+        </div>
+        <div class="spotlight">
+          <article class="summer-card summer-card--dark">
+            <div>
+              <p class="label">Black Forest Tonic</p>
+              <p>Czarne espresso, wiśnia i tonic.</p>
+            </div>
+            <strong>24 PLN</strong>
+          </article>
+          <article class="summer-card summer-card--green">
+            <div>
+              <p class="label">Pink Dream Matcha</p>
+              <p>Lawenda, róż, matcha i lód.</p>
+            </div>
+            <strong>26 PLN</strong>
+          </article>
+          <article class="summer-card summer-card--red">
+            <div>
+              <p class="label">Basil Garden Lemonade</p>
+              <p>Truskawka, bazylia i cytryna.</p>
+            </div>
+            <strong>22 PLN</strong>
+          </article>
+          <article class="summer-card summer-card--pistachio">
+            <div>
+              <p class="label">Velvet Pistachio Latte</p>
+              <p>Kremowa pistacja i espresso. Na lodzie.</p>
+            </div>
+            <strong>28 PLN</strong>
+          </article>
+        </div>
+        <details class="image-accordion">
+          <summary>Zobacz plakat menu letniego</summary>
+          <img src="assets/summer-menu.jpg" alt="Plakat menu letniego kawiarni Święty Spokój">
+        </details>
+      </section>
+
+      <section class="panel" id="coffee" aria-labelledby="coffee-title">
+        <div class="section-head">
+          <p class="kicker">Specialty</p>
+          <h2 id="coffee-title">Kawa</h2>
+        </div>
+        <div class="menu-list" data-menu="coffee"></div>
+      </section>
+
+      <section class="panel" id="cold" aria-labelledby="cold-title">
+        <div class="section-head">
+          <p class="kicker">Na zimno</p>
+          <h2 id="cold-title">Napoje orzeźwiające</h2>
+        </div>
+        <div class="menu-list" data-menu="cold"></div>
+      </section>
+
+      <section class="panel" id="tea" aria-labelledby="tea-title">
+        <div class="section-head">
+          <p class="kicker">Spokojna chwila</p>
+          <h2 id="tea-title">Herbaty, czekolada i matcha</h2>
+        </div>
+        <div class="menu-list" data-menu="tea"></div>
+      </section>
+
+      <section class="panel" id="sweets" aria-labelledby="sweets-title">
+        <div class="section-head">
+          <p class="kicker">Deser</p>
+          <h2 id="sweets-title">Lody rzemieślnicze</h2>
+        </div>
+        <div class="menu-list" data-menu="sweets"></div>
+      </section>
+
+      <section class="panel" id="bar" aria-labelledby="bar-title">
+        <div class="section-head">
+          <p class="kicker">Wieczorem</p>
+          <h2 id="bar-title">Wino, piwo i drinki</h2>
+        </div>
+        <div class="menu-list" data-menu="bar"></div>
+      </section>
+
+      <section class="panel" id="original" aria-labelledby="original-title">
+        <div class="section-head">
+          <p class="kicker">PDF</p>
+          <h2 id="original-title">Oryginalne menu</h2>
+        </div>
+        <div class="original-grid">
+          <a class="original-card" href="assets/main-menu.jpg" target="_blank" rel="noreferrer">
+            <img src="assets/main-menu.jpg" alt="Oryginalna plansza menu Święty Spokój">
+            <span>Otwórz główne menu</span>
+          </a>
+          <a class="original-card" href="assets/summer-menu.jpg" target="_blank" rel="noreferrer">
+            <img src="assets/summer-menu.jpg" alt="Oryginalna plansza menu letniego Święty Spokój">
+            <span>Otwórz menu letnie</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Relax. Enjoy. Be Święty Spokój.</p>
+      <a href="#top">Do góry</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
